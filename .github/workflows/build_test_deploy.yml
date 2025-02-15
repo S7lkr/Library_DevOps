@@ -27,5 +27,7 @@ jobs:
       run: npm run server &
     - name: Build app (Run client)
       run: npm run start &
+    - name: Install Browsers
+      run: npx playwright install
     - name: Execute UI tests
       run: npm run test
