@@ -28,4 +28,4 @@ jobs:
         npm run server &
         npm run start &
     - name: Execute UI tests
-    - run: npm run test
+      run: npm run test
