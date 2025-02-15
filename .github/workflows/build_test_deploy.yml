@@ -23,9 +23,9 @@ jobs:
         cache: 'npm'
     - name: Install NPM modules
       run: npm install
-    - name: Build app (run server and client, backend + frontend)
-      run: |
-        npm run server &
-        npm run start &
+    - name: Run server
+      run: npm run server &
+    - name: Build app (Run client)
+      run: npm run start &
     - name: Execute UI tests
       run: npm run test
