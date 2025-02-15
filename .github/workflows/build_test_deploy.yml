@@ -46,6 +46,7 @@ jobs:
         github_token: ''
         service_id: ${{ secrets.MY_RENDER_SERVICE_ID_BE }}
         api_key: ${{ secrets.MY_RENDER_API_KEY }}
+        # job will finish only until after 'render.com' deployes project
         wait_deploy: true
 
   deploy-frontend:
@@ -60,4 +61,5 @@ jobs:
         github_token: ''
         service_id: ${{ secrets.MY_RENDER_SERVICE_ID_FE }}
         api_key: ${{ secrets.MY_RENDER_API_KEY }}
+        # job will finish only until after render.com' deployes project
         wait_deploy: true
